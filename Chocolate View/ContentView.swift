@@ -2,16 +2,9 @@ import SwiftUI
 
 struct ContentView: View {
     
-    private let textCount = 28
-    private let text: String = "Chocolate "
-    private let n = 300
-    private let spacing = 20.0
-    private let opacity = 0.7
     
-    @State private var angle = -50.0
-    private var chocolateTexts: String {
-        return String(repeating: text, count: textCount)
-    }
+    @State private var angle = 0.0
+    @State private var opacity = 0.0
     
     var body: some View {
         ZStack {
@@ -21,19 +14,23 @@ struct ContentView: View {
                 endPoint: .bottomTrailing
             )
             .opacity(0.7)
-            VStack(spacing: spacing) {
-                ForEach(0 ..< n, id: \.self) { _ in
-                    Text(chocolateTexts)
-                        .fixedSize(horizontal: true, vertical: false)
-                        .font(.caption)
-                }
+            .ignoresSafeArea()
+            .mask {
+                ChocolateView(
+                    text: "Chocolate",
+                    wordPerLine: 30,
+                    rows: 300,
+                    spacing: 20,
+                    angle: angle,
+                    font: .largeTitle
+                )
             }
-            .rotationEffect(Angle(degrees: angle))
-            .opacity(opacity)
+            
         }
         .onTapGesture {
             withAnimation(.linear(duration: 2)) {
-                angle = angle * -1
+                angle = 50.0
+                opacity = 0.7
             }
         }
     }

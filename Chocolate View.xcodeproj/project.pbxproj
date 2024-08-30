@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB5DE4822C81711900CE30D8 /* ChocolateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5DE4812C81711900CE30D8 /* ChocolateView.swift */; };
 		FBF388892C7FFCA500987CD1 /* Chocolate_ViewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF388882C7FFCA500987CD1 /* Chocolate_ViewApp.swift */; };
 		FBF3888B2C7FFCA500987CD1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF3888A2C7FFCA500987CD1 /* ContentView.swift */; };
 		FBF3888D2C7FFCA600987CD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBF3888C2C7FFCA600987CD1 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FB5DE4812C81711900CE30D8 /* ChocolateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChocolateView.swift; sourceTree = "<group>"; };
 		FBF388852C7FFCA500987CD1 /* Chocolate View.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chocolate View.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBF388882C7FFCA500987CD1 /* Chocolate_ViewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chocolate_ViewApp.swift; sourceTree = "<group>"; };
 		FBF3888A2C7FFCA500987CD1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,6 +56,7 @@
 			children = (
 				FBF388882C7FFCA500987CD1 /* Chocolate_ViewApp.swift */,
 				FBF3888A2C7FFCA500987CD1 /* ContentView.swift */,
+				FB5DE4812C81711900CE30D8 /* ChocolateView.swift */,
 				FBF3888C2C7FFCA600987CD1 /* Assets.xcassets */,
 				FBF3888E2C7FFCA600987CD1 /* Chocolate_View.entitlements */,
 				FBF3888F2C7FFCA600987CD1 /* Preview Content */,
@@ -141,6 +144,7 @@
 			files = (
 				FBF3888B2C7FFCA500987CD1 /* ContentView.swift in Sources */,
 				FBF388892C7FFCA500987CD1 /* Chocolate_ViewApp.swift in Sources */,
+				FB5DE4822C81711900CE30D8 /* ChocolateView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
